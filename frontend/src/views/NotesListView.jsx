@@ -18,11 +18,11 @@ const NotesListView = () => {
   return (
     <div className="notes">
       <div className="flex items-center justify-between py-3 px-4">
-        <h2 className="">&#9782; Notes</h2>
-        <p className="notes-count">{notes.length}</p>
+        <h2 className="text-main text-[24px] bold">&#9782; Notes</h2>
+        <p className="text-gray text-[18px] bold">{notes.length}</p>
       </div>
 
-      <div className="notes-list">
+      <div className="p-0 my-4 h-[70vh] overflow-y-auto ">
         {notes.map((note, index) => (
           <ListItem key={index} note={note} />
         ))}
