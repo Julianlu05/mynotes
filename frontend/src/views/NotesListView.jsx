@@ -17,8 +17,8 @@ const NotesListView = () => {
 
   return (
     <div className="notes">
-      <div className="notes-header">
-        <h2 className="notes-title">&#9782; Notes</h2>
+      <div className="flex items-center justify-between py-3 px-4">
+        <h2 className="">&#9782; Notes</h2>
         <p className="notes-count">{notes.length}</p>
       </div>
 
