@@ -10,7 +10,7 @@ function App() {
         <div className="w-full max-w-[480px] h-[88vh] mx-auto bg-white shadow-md relative">
           <Header />
           <Routes>
-            <Route path="/" element={<NotesListView />} />
+            <Route exact path="/" element={<NotesListView />} />
             <Route path="/note/:id" element={<NotePageView />} />
           </Routes>
         </div>
