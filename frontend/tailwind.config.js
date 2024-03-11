@@ -1,17 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
   theme: {
     colors: {
-      main: "rgb(var(--color-main) / <alpha-value>)",
-      text: "rgb(var(--color-text) / <alpha-value>)",
-      dark: "rgb(var(--color-dark) / <alpha-value>)",
-      gray: "rgb(var(--color-gray) / <alpha-value>)",
-      bg: "rgb(var(--color-bg) / <alpha-value>)",
-      lighter: "rgb(var(--color-lighter) / <alpha-value>)",
-      white: "rgb(var(--color-white) / <alpha-value>)",
-      border: "rgb(var(--color-border) / <alpha-value>)",
+      main: "#f68657",
+      text: "#d6d1d1",
+      dark: "#f5f6f7",
+      gray: "#999",
+      bg: "#1f2124",
+      lighter: "#292a2c",
+      white: "#2e3235",
+      border: "#252629",
     },
     extend: {},
   },
