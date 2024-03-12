@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ListItem from "../components/ListItem";
+import AddButton from "../components/AddButton";
 
 const NotesListView = () => {
   const [notes, setNotes] = useState([]);
@@ -16,7 +17,7 @@ const NotesListView = () => {
   };
 
   return (
-    <div className="notes">
+    <div className="relative">
       <div className="flex items-center justify-between py-3 px-4">
         <h2 className="text-main text-[24px] bold">&#9782; Notes</h2>
         <p className="text-gray text-[18px] bold">{notes.length}</p>
@@ -27,6 +28,7 @@ const NotesListView = () => {
           <ListItem key={index} note={note} />
         ))}
       </div>
+      <AddButton></AddButton>
     </div>
   );
 };
