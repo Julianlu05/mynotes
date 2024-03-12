@@ -32,3 +32,9 @@ body{
 a {
   text-decoration: none;
 }
+
+textarea:active,
+textarea:focus {
+  outline: none;
+  border: none;
+}
